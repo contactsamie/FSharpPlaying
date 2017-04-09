@@ -13,9 +13,12 @@ let rec sumOfSquaresMaths nums =
 
 let rec sumOfSquaresDeclarative nums = nums  |> Seq.map square |> Seq.sum
 
+let rec addup x=fun(y)->x+y
+
 sumOfSquaresRegular items,
 sumOfSquaresMaths items,
 sumOfSquaresDeclarative items,
-[1..10]|>Seq.sum
+[1..10]|>Seq.sum,
+addup 1 2
 
 
