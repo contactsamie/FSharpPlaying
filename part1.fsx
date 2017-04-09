@@ -20,5 +20,3 @@ sumOfSquaresMaths items,
 sumOfSquaresDeclarative items,
 [1..10]|>Seq.sum,
 addup 1 2
-
-
