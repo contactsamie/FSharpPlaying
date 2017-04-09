@@ -2,8 +2,7 @@ let items = [1..4]
 let square x = x*x
 let sumOfSquaresRegular nums =
     let mutable acc=0
-    for x in nums do
-        acc <- acc+square x
+    for x in nums do  acc <- acc+square x
     acc
 let rec sumOfSquaresMaths nums =
     match nums with
@@ -12,11 +11,7 @@ let rec sumOfSquaresMaths nums =
     | [h;t]      -> square h + square t
     | h::t       -> square h + sumOfSquaresRegular t
 
-let rec sumOfSquaresDeclarative nums =
-    nums
-    |> Seq.map square
-    |> Seq.sum
-
+let rec sumOfSquaresDeclarative nums = nums  |> Seq.map square |> Seq.sum
 
 sumOfSquaresRegular items
 sumOfSquaresMaths items
