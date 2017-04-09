@@ -17,3 +17,5 @@ let orderLines=[
 let addPair x  y={qty=(x.qty+y.qty);amount= (x.amount+y.amount)}
 
 orderLines |> Seq.reduce addPair
+
+// a monad is a monoid in the category of endofunctors
